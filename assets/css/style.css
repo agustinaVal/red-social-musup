@@ -7,8 +7,41 @@ body{
 	color: #fff;
 }
 
- .card-content{
-	color: #000;
+.purpleStyle {
+	padding: 80px 0px;
+	background: linear-gradient(180deg, #673ab7, #1e88e5 );
+	text-align: center;
+}
+
+.deepPurpleStyle {
+	padding: 80px 0px;
+	background-color: #512da8;
+	text-align: center;
+}
+
+.brand-logo img{
+	width: 70%;
+	padding: 5px 10px;
+}
+
+.bigTitle {
+	font-size: 60px;
+	text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.textHero {
+	height: 450px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.shadow {
+	text-shadow: 1px 1px 25px #444;
 }
 
 .carousel img {
@@ -17,153 +50,46 @@ body{
 	object-fit: cover;
 }
 
-.banner {
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  height: 160px;
-  width: 100%;
-  
-}
-
-.banner__background {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+video { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   z-index: -100;
-}
-
-.banner__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.no-autoplay .video-player {
-  display: none;
-}
-
-.autoplay .video-placeholder {
-  display: none;
-}
-
-.video-placeholder {
-  width: 100%;
-  height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+ 	background: purple;
   background-size: cover;
-  background-repeat: no-repeat;
+  transition: 1s opacity;
 }
 
-.video-player {
-  border: none;
-  width: 100%;
-  height: 100%;
+#pause {
+	cursor: pointer;
 }
 
-.video-player--banner {
-  position: absolute;
-  /* (240 - 160) / 2 = 40 */
-  top: -40px;
-  left: -50%;
-  width: 200%;
-  height: 240px;
+.myBtn { 
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#polina button:hover { 
+   background: rgba(0,0,0,0.5);
 }
 
-.center-box {}
-
-.center-box:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -.25em;
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
 }
-
-.center-box__body {
-  vertical-align: middle;
-  display: inline-block;
-  width: 100%;
-}
-
-.txt-title {
-  font-family: Arial, sans-serif;
-  font-size: 37px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  line-height: 1;
-  padding: 20px;
-}
-
-
-@media (min-width: 320px) {
-  .banner {
-    height: 240px;
-  }
-  .video-player--banner {
-    /* (360 - 240) / 2 = 60 */
-    top: -60px;
-    height: 360px;
-  }
-}
-
-@media (min-width: 480px) {
-  .banner {
-    height: 320px;
-  }
-  .video-player--banner {
-    /* (480 - 320) / 2 = 80 */
-    top: -80px;
-    height: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .banner {
-    height: 480px;
-  }
-  .video-player--banner {
-    /* (720 - 480) / 2 = 120 */
-    top: -120px;
-    height: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .banner {
-    height: 640px;
-  }
-  .video-player--banner {
-    /* (960 - 640) / 2 = 160 */
-    top: -160px;
-    height: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .banner {
-    height: 800px;
-  }
-  .video-player--banner {
-    /* (1200 - 800) / 2 = 200 */
-    top: -200px;
-    height: 1200px;
-  }
-}
-
-@media (min-width: 2000px) {
-  .video-player--banner {
-    /* (1600 - 800) / 2 = 400 */
-    top: -400px;
-    height: 1600px;
-  }
+@media screen and (max-device-width: 800px) {
+  html { background: url(../img/noah and the whale.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
 }

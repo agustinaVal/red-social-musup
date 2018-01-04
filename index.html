@@ -9,15 +9,22 @@
 		<!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- fontawesome -->
+  <script src="https://use.fontawesome.com/5fc8b62c16.js"></script>
+  <!-- favicon -->
+  <link href="assets/img/favicon.ico" rel="icon">
 </head>
-
 <body>
-
-  <header class="col s12 col m12 l12">   
+  <header class="col s12 col m12 l12 navbar-fixed">   
    <nav>
     <div class="nav-wrapper deep-purple">
-     <a href="#!" class="brand-logo">Mus-Up</a>
+     <a href="#!" class="brand-logo"><img src="assets/img/logo-musup.png" alt=""></a>
       <ul class="right hide-on-med-and-down">
+        <li>
+          <div id="pause">
+            <i class="fa fa-pause"></i>Pausar
+          </div>
+        </li>
       <li><a href="sass.html"><i class="material-icons">search</i></a></li>     
       <!-- Dropdown Trigger --> 
       <li><a class="waves-effect waves-light btn  purple darken-4">Log-In</a></li>
@@ -26,52 +33,69 @@
      </div>
     </nav>
   </header>
-
-
- <section class="video">        
-  <div class="banner">
-   <div class="banner__background">    
-     <iframe class="video-player video-player--banner"  width="100%" height="600px" src="https://www.youtube.com/embed/Z7kqwSM-T4E?rel=0&amp;controls=0&amp;showinfo=0autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-    <!-- <iframe class="video-player video-player--banner" src="https://player.vimeo.com/video/117099403?autoplay=1&loop=1&title=0&portrait=0&badge=0&byline=0"></iframe> -->
-     </div>
-    <div class="banner__content center-box">
-     <div class="center-box__body">
-       <h1 class="txt-title txt-title--banner">Comparte tu propia musica!</h1>
-       <h3 class="txt-title txt-title--banner">Descubre y muestra tu talento!</h3>
-       <h2 class="txt-title txt-title--banner">Sube tu musica </h2>       
+  <!-- hero video -->
+  <section class="video">
+    <video poster="https://i.ytimg.com/vi/DFFuHTd20BE/maxresdefault.jpg" id="bgvid" playsinline autoplay loop>
+      <source src="assets/img/Salvapantallas_-_Loco_Los_Autnticos_Decadentes(youtube.com).mp4" type="video/mp4">
+      </video>
+    <div class="container">
+     <div class="textHero">
+       <h1 class="bigTitle shadow">¡Comparte tu propia musica!</h1>
+       <h3 class="shadow">Descubre y muestra tu talento</h3>
+       <h5 class="shadow">Sube aquí tu musica</h5>       
      </div>
     </div>
-  </div>
- <pre id="window-width"></pre>
- <pre id="autoplay"></pre>     
-</section>
-
-
-<!-- carrusel de ultimos videos subidos -->
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col hide-on-small-only m12">
-        <div class="carousel">
-          <a class="carousel-item" data-caption="A picture of a way with a group of trees in a park" href="#one!"><img src="assets/img/photo_8628_0-6.jpg"><p>adsfadsf</p></a>
-          <a class="carousel-item" href="#two!"><img class="circle responsive-img" src="assets/img/c804c700822e0dce4e11f62b29815243-310x240.jpg"></a>
-          <a class="carousel-item" href="#three!"><img src="assets/img/gallery_circa-waves-young-chasers-artwork.jpg"></a>
-          <a class="carousel-item" href="#four!"><img src="assets/img/music-2149880_960_720.jpg"></a>
-          <a class="carousel-item" href="#five!"><img src="assets/img/oz-hanging_2997492a.jpg"></a>
+  </section>
+  <!-- carrusel de ultimos videos subidos -->
+  <section class="purpleStyle">
+    <div class="container">
+      <div class="row">
+        <div class="col hide-on-small-only m12">
+          <h4>Conoce nuevos sonidos</h4>
+          <div class="carousel">
+            <a class="carousel-item" data-caption="A picture of a way with a group of trees in a park" href="#one!"><img src="assets/img/photo_8628_0-6.jpg"><p>adsfadsf</p></a>
+            <a class="carousel-item" href="#two!"><img class="circle responsive-img" src="assets/img/c804c700822e0dce4e11f62b29815243-310x240.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="assets/img/gallery_circa-waves-young-chasers-artwork.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="assets/img/music-2149880_960_720.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="assets/img/oz-hanging_2997492a.jpg"></a>
+          </div>
+        </div>
+      </div>
+      <!-- ultimos artistas -->
+      <div class="row">
+        <div class="col hide-on-small-only m12">
+          <h4>Descubre nuevos talentos</h4>
+          
+          
+        </div>
+      </div>
+      <!-- tocatas -->
+      <div class="row">
+        <div class="col hide-on-small-only m12">
+          <h4>Conoce nuevos sonidos</h4>
+          <div class="carousel">
+            <a class="carousel-item" data-caption="A picture of a way with a group of trees in a park" href="#one!"><img src="assets/img/photo_8628_0-6.jpg"><p>adsfadsf</p></a>
+            <a class="carousel-item" href="#two!"><img class="circle responsive-img" src="assets/img/c804c700822e0dce4e11f62b29815243-310x240.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="assets/img/gallery_circa-waves-young-chasers-artwork.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="assets/img/music-2149880_960_720.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="assets/img/oz-hanging_2997492a.jpg"></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- carrusel de personas -->
-
-
-
-
-
-  
+  <footer class="deepPurpleStyle">
+    <div class="container">
+      <div class="row">
+        <div class="col hide-on-small-only m12">
+          <h4>footer</h4>
+          
+        </div>
+      </div>
+    </div>
+  </footer>  
   <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>

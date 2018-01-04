@@ -8,3 +8,19 @@ body{
 	vertical-align: bottom;
 	padding-bottom: 8px;
 }
+.background img{
+  width: 100%;
+
+}
+
+.btnFolow{
+	background-color: #450358FF;	
+	}
+.card-image{
+	margin:5px;
+	height: 300px;
+	width: 80%;
+	background-image: url(../img/music1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

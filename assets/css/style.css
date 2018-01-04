@@ -166,4 +166,6 @@ body{
     top: -400px;
     height: 1600px;
   }
-
+.modal{
+  color: #404040FF;
+}

@@ -5,6 +5,7 @@ $(document).ready(function(){
 		dist:-50, 
 		padding: 100
 	});
+    $('.modal').modal();
 
 
 

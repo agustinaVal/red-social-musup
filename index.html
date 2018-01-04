@@ -13,19 +13,30 @@
 
 <body>
 
-  <header class="col s12 col m12 l12">   
+   <header class="col s12 col m12 l12">   
    <nav>
     <div class="nav-wrapper deep-purple">
      <a href="#!" class="brand-logo">Mus-Up</a>
       <ul class="right hide-on-med-and-down">
       <li><a href="sass.html"><i class="material-icons">search</i></a></li>     
-      <!-- Dropdown Trigger --> 
-      <li><a class="waves-effect waves-light btn  purple darken-4">Log-In</a></li>
-       <li><a class="waves-effect waves-light btn  purple darken-4">Sing-In</a></li> <li><a href="bio.html">bio</a></li>
+      <!-- Dropdown Trigger -->       
+      <li><a class="waves-effect waves-light btn  purple darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">Log-In</a></li>
+       <li><a class="waves-effect waves-light btn  purple darken-4">Sign-Up</a></li> <li><a href="bio.html">bio</a></li>
       </ul>
      </div>
     </nav>
   </header>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 class="text"><i class="fa fa-user-circle" aria-hidden="true">Nombre de usuario</i></h4>
+      <p class="text"><i class="fa fa-unlock-alt" aria-hidden="true"></i>Contraseña</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ingresar</a>
+    </div>
+  </div>
 
 
  <section class="video">        
@@ -64,9 +75,6 @@
     </div>
   </div>
 </section>
-
-<!-- carrusel de personas -->
-
 
 
 

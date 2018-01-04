@@ -89,7 +89,18 @@ video {
 @media screen and (max-width: 500px) { 
   div{width:70%;} 
 }
+
 @media screen and (max-device-width: 800px) {
   html { background: url(../img/noah and the whale.jpg) #000 no-repeat center center fixed; }
-  #bgvid { display: none; }
+  #bgvid { display: none;
+  }
+
+@media (min-width: 2000px) {
+  .video-player--banner {
+    /* (1600 - 800) / 2 = 400 */
+    top: -400px;
+    height: 1600px;
+  }
+.modal{
+  color: #404040FF;
 }

@@ -26,9 +26,9 @@
           </div>
         </li>
       <li><a href="sass.html"><i class="material-icons">search</i></a></li>     
-      <!-- Dropdown Trigger --> 
-      <li><a class="waves-effect waves-light btn  purple darken-4">Log-In</a></li>
-       <li><a class="waves-effect waves-light btn  purple darken-4">Sing-In</a></li> <li><a href="bio.html">bio</a></li>
+      <!-- Dropdown Trigger -->       
+      <li><a class="waves-effect waves-light btn  purple darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">Log-In</a></li>
+       <li><a class="waves-effect waves-light btn  purple darken-4">Sign-Up</a></li> <li><a href="bio.html">bio</a></li>
       </ul>
      </div>
     </nav>
@@ -42,10 +42,20 @@
      <div class="textHero">
        <h1 class="bigTitle shadow">¡Comparte tu propia musica!</h1>
        <h3 class="shadow">Descubre y muestra tu talento</h3>
-       <h5 class="shadow">Sube aquí tu musica</h5>       
+       <h5 class="shadow">Sube aquí tu musica</h5>
      </div>
     </div>
   </section>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 class="text"><i class="fa fa-user-circle" aria-hidden="true">Nombre de usuario</i></h4>
+      <p class="text"><i class="fa fa-unlock-alt" aria-hidden="true"></i>Contraseña</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ingresar</a>
+    </div>
+  </div>
   <!-- carrusel de ultimos videos subidos -->
   <section class="purpleStyle">
     <div class="container">
@@ -84,7 +94,6 @@
       </div>
     </div>
   </section>
-
 <!-- carrusel de personas -->
   <footer class="deepPurpleStyle">
     <div class="container">
@@ -95,7 +104,7 @@
         </div>
       </div>
     </div>
-  </footer>  
+  </footer>
   <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>

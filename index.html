@@ -46,31 +46,32 @@
      </div>
     </div>
   </section>
-  <!-- Modal Structure -->
+
+    <!-- Modal Structure -->
   <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4 ><i class="fa fa-user-circle icon" aria-hidden="true">Nombre de usuario</i></h4>
-      <p ><i class="fa fa-unlock-alt icon" aria-hidden="true"></i>Contraseña</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ingresar</a>
+    <div class="modal-content">     
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6" >
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="name">
+              <label for="icon_prefix" >Nombre de usuario</label>
+            </div>
+            <div class="input-field col s6">              
+              <input id="icon_telephone" type="tel" class="validate phone">
+              <label for="icon_telephone">Contraseña</label>
+            </div>
+          </div>
+          <a class="waves-effect waves-light btn" id="add">Ingresar</a>
+        </form>
+      </div>
     </div>
   </div>
-  <!-- carrusel de ultimos videos subidos -->
-  <section class="purpleStyle">
-    <div class="container">
-      <div class="row rowSection">
-        <div class="col hide-on-small-only m12">
-          <h4>Conoce nuevos sonidos</h4>
-          <div class="carousel">
-            <a class="carousel-item" data-caption="A picture of a way with a group of trees in a park" href="#one!"><img src="assets/img/photo_8628_0-6.jpg"><p>Escuchar más</p></a>
-            <a class="carousel-item" href="#two!"><img class=" responsive-img" src="assets/img/c804c700822e0dce4e11f62b29815243-310x240.jpg"><p>Escuchar más</p></a>
-            <a class="carousel-item" href="#three!"><img src="assets/img/gallery_circa-waves-young-chasers-artwork.jpg"><p>Escuchar más</p></a>
-            <a class="carousel-item" href="#four!"><img src="assets/img/music-2149880_960_720.jpg"><p>Escuchar más</p></a>
-            <a class="carousel-item" href="#five!"><img src="assets/img/oz-hanging_2997492a.jpg"><p>Escuchar más</p></a>
-          </div>
-        </div>
-      </div>
+
+
+  
+ 
       <!-- ultimos artistas -->
       <div class="row ">
         <h4>Descubre nuevos talentos</h4>
@@ -197,7 +198,7 @@
     <div class="footer-copyright" style="background-color: #0B175AFF">
       <div class="container">
         © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!"><img src="assets/img/chile.png" style="width: 40px" alt=""></a>
+        <a class="grey-text text-lighten-4 right" href="#!">Chile <img src="assets/img/chile.png" style="width: 20px" alt=""></a>
       </div>
     </div>
   </footer>

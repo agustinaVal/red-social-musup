@@ -13,10 +13,14 @@ $(document).ready(function(){
     var user = $('#usuario').val();
     var clave = $('#clave').val();
     $('.btnSignIn').hide();
-    $('#listHeader').append('<li class="agus"><a href="bio.html"><img src="assets/img/agus.jpg" alt="" class="circle"></a></li><li><a href="bio.html">' + user + '</a></li>');
+    $('#listHeader').append('<li class="agus"><a href="bio.html"><img src="assets/img/agus.jpg" alt="" class="userPage circle"></a></li><li class="userPage"><a href="bio.html">' + user + '</a></li>');
     $('.brand-logo').before('<a href="#" data-activates="slide-out" class="btnUser"><i class="material-icons">menu</i></a>');
     $('#slide-out').show();
     $(".btnUser").sideNav();
+  });
+  $('.userPage').click(function(){
+    $('.video').hide();
+    $('.purpleStyle').hide();
   });
   $('#send').click(function(){
         var inputWrite = $('#inputWrite').val();

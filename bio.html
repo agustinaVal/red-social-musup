@@ -13,15 +13,23 @@
   <!-- favicon -->
   <link href="assets/img/favicon.ico" rel="icon">
   <link rel="stylesheet" href="assets/css/bioStyle.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <header class="col s12 col m12 l12">   
+  <header class="col s12 col m12 l12 navbar-fixed">   
    <nav>
-    <div class="nav-wrapper deep-purple">
-     <a href="#!" class="brand-logo">Mi Cuenta</a>
-      <ul class="right hide-on-med-and-down">
-      <li><a href="sass.html"><i class="material-icons">search</i></a></li>    
+    <div class="nav-wrapper">
+     <a href="#!" class="brand-logo"><img src="assets/img/logo-musup.png" alt=""></a>
+      <ul class="right hide-on-med-and-down" id="listHeader">
+        <li>
+          <div id="pause">
+            <i class="fa fa-pause"></i>Pausar <img src='assets/img/play.gif'>
+          </div>
+        </li>
+      <li><a href="sass.html"><i class="material-icons">search</i></a></li>     
+      <!-- Dropdown Trigger -->       
+      <li class="agus"><a href="bio.html"><img src="assets/img/agus.jpg" alt="" class="circle"></a></li><li><a href="bio.html">' + user + '</a></li>
       </ul>
      </div>
     </nav>
@@ -56,6 +64,12 @@
          <div class="card-content">
           <h4>Biografy</h4>
             <p>Yo empecé con una guitarra vieja de mi mamá. Primero hice dos meses de piano, me pareció aburrido, y un día encontré una guitarra vieja de mi mamá y empecé a aprender con videos de Youtube y con mis amigos, además mi familia es muy musical y tienen amigos que me enseñaron también, más por parte de mi mamá <a href="">ver mas...</a></p>
+            <audio id="sonido" src="assets/img/22468261_2003982149839322_1684191448540381184_n.mp3">
+</audio>
+<button onclick="javascript:document.getElementById('sonido').play();">
+Escuchar pista</button>
+<button onclick="javascript:document.getElementById('sonido').pause();">
+Pausa</button>
          </div>
        <div class="card">    
          <div class="card-content">
@@ -80,6 +94,8 @@
      </div>
     </div>
   </section>
+
+
   <section class="center">
     <div class="container">
       <div class="row">
@@ -89,7 +105,7 @@
             <input id="inputWrite">
             <button type="button" id="send"><i class="fa fa-plus" aria-hidden="true"></i> Agregar</button>
             <!-- contenedor comentarios -->
-            <div id="printMessage"></div>
+            <div id="printMessage" class="textA"></div>
           </div>
         </div>
       </div>

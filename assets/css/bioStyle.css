@@ -29,4 +29,38 @@ body{
 .videosBio{
 	padding-left: 10em;
 }
+.center .message input {
+	width: 100%;
+	height: 100px;
+	background-color: #D6D6D6;	
+	color: #00137FFF;
+	font-size: 15px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 0px;
+	margin-bottom: 10px;
+	overflow: scroll;
+	}
 
+#send{
+	background-color: #1DA1F2;	
+	border: 0px;
+	cursor: pointer;
+	box-shadow: 0px 1px 24px -6px rgba(0,0,0,1);
+	text-align: center;
+	margin-bottom: 20pxA;
+	width: 130px;
+}
+#send:hover{
+	background-color: #167EBF; 
+}
+#printMessage{
+	margin-top: 1em;
+	background-color: #D6D6D6;	
+	border-radius: 5px;
+	width: 100%;
+	color: #4E4D53;
+}
+.textA{
+	color: #00137FFF;
+}

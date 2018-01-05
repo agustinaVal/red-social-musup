@@ -19,7 +19,7 @@
    <nav>
     <div class="nav-wrapper">
      <a href="#!" class="brand-logo"><img src="assets/img/logo-musup.png" alt=""></a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down" id="listHeader">
         <li>
           <div id="pause">
             <i class="fa fa-pause"></i>Pausar <img src='assets/img/play.gif'>
@@ -27,12 +27,34 @@
         </li>
       <li><a href="sass.html"><i class="material-icons">search</i></a></li>     
       <!-- Dropdown Trigger -->       
-      <li><a class="waves-effect waves-light btn  purple darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">Log-In</a></li>
-       <li><a class="waves-effect waves-light btn  purple darken-4">Sign-Up</a></li> <li><a href="bio.html">bio</a></li>
+      <li class="btnSignIn"><a class="waves-effect waves-light btn  purple darken-4 waves-effect waves-light btn modal-trigger" href="#modal1">Log-In</a></li>
+       <li class="btnSignIn"><a class="waves-effect waves-light btn  purple darken-4">Sign-Up</a></li>
       </ul>
      </div>
     </nav>
   </header>
+  <!-- lateral user -->
+  <ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="assets/img/music3.jpg">
+      </div>
+      <a href="#!user"><img class="circle" src="assets/img/agus.jpg"></a>
+      <a href="#!name"><span class="white-text name">Agus Val</span></a>
+      <a href="#!email"><span class="white-text email">titivalenti24@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>Mi perfil</a></li>
+    <li><a href="#!">Discografia</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!">Bibliografia</a></li>
+    <li><div class="divider"></div></li>
+    <li><a chref="#!">Mi Musica</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!">Transmision en vivo</a></li>
+    <li><div class="divider"></div></li>
+     <li><a href="#!">Mis Videos</a></li>
+    <li><a class="btnFolow waves-effect waves-light btn">Subir Audio</a></li>
+  </ul>
   <!-- hero video -->
   <section class="video">
     <video poster="https://i.ytimg.com/vi/DFFuHTd20BE/maxresdefault.jpg" id="bgvid" playsinline autoplay loop>
@@ -49,11 +71,20 @@
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4 ><i class="fa fa-user-circle icon" aria-hidden="true">Nombre de usuario</i></h4>
-      <p ><i class="fa fa-unlock-alt icon" aria-hidden="true"></i>Contraseña</p>
+      <h4>Ingresa a tu cuenta</h4>
+      <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="usuario" type="text" class="validate">
+          <label for="icon_prefix">Nombre de usuario</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">lock</i>
+          <input id="clave" type="tel" class="validate">
+          <label for="icon_telephone">Clave</label>
+        </div>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ingresar</a>
+      <a href="#!" id="ingresar" class="modal-action modal-close waves-effect waves-green btn-flat">Ingresar</a>
     </div>
   </div>
   <!-- carrusel de ultimos videos subidos -->
@@ -62,6 +93,7 @@
       <div class="row rowSection">
         <div class="col hide-on-small-only m12">
           <h4>Conoce nuevos sonidos</h4>
+          <hr>
           <div class="carousel">
             <a class="carousel-item" data-caption="A picture of a way with a group of trees in a park" href="#one!"><img src="assets/img/photo_8628_0-6.jpg"><p>Escuchar más</p></a>
             <a class="carousel-item" href="#two!"><img class=" responsive-img" src="assets/img/c804c700822e0dce4e11f62b29815243-310x240.jpg"><p>Escuchar más</p></a>
@@ -72,8 +104,9 @@
         </div>
       </div>
       <!-- ultimos artistas -->
-      <div class="row ">
+      <div class="row rowSection">
         <h4>Descubre nuevos talentos</h4>
+        <hr>
         <div class="col s4 m2 bigPlay">
           <div class="imgs img1"></div>
           <a href="#"><i class="fa fa-play"></i></a>
@@ -100,8 +133,9 @@
         </div>
       </div>
       <!-- tocatas -->
-      <div class="row">
+      <div class="row rowSection">
           <h4>Próximas Tocatas</h4>
+          <hr>
           <div class="col s12 m3">
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">

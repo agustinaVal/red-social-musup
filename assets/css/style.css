@@ -124,7 +124,6 @@ video {
 #polina button:hover { 
    background: rgba(0,0,0,0.5);
 }
-
 @media screen and (max-width: 500px) { 
   div{width:70%;} 
 }
@@ -140,6 +139,9 @@ video {
     top: -400px;
     height: 1600px;
   }
+
+}
+
 .modal{
   color: #404040FF;
 }

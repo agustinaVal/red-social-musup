@@ -1,5 +1,5 @@
 body{
-   background-color: #00137FFF;
+   background: linear-gradient(180deg, #673ab7,#4800DEFF, #42B0FE);
 }
 
 .agus{
@@ -18,9 +18,15 @@ body{
 	}
 .card-image{
 	margin:5px;
+	margin-left: 1em;
+	padding-left: 1em;
 	height: 300px;
 	width: 80%;
 	background-image: url(../img/music1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.videosBio{
+	padding-left: 10em;
+}
+

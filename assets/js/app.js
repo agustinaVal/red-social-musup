@@ -47,7 +47,7 @@ pauseButton.addEventListener("click", function() {
 })
 
 var vid = document.getElementById("bgvid");
-	vid.volume = 0.05;
+	vid.volume = 0.09;
 var vid = document.getElementById("bgvid");
 	vid.currentTime = 11;
 

@@ -7,6 +7,10 @@ body{
 	color: #fff;
 }
 
+.nav-wrapper {
+	background: linear-gradient(-5deg, #2576bd, #512da8, #01052a );
+}
+
 .purpleStyle {
 	padding: 80px 0px;
 	background: linear-gradient(180deg, #673ab7, #1e88e5 );
@@ -28,12 +32,11 @@ body{
 	font-size: 60px;
 	text-transform: uppercase;
   text-align: center;
-  font-weight: bold;
   margin-bottom: 0px;
 }
 
 .textHero {
-	height: 450px;
+	height: 500px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -41,13 +44,42 @@ body{
 }
 
 .shadow {
-	text-shadow: 1px 1px 25px #444;
+	text-shadow: 1px 1px 15px #555;
+}
+
+i {
+	padding: 0px 8px;
 }
 
 .carousel img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.bigPlay {
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.bigPlay:hover {
+	filter:saturate(2);
+}
+
+.bigPlay .imgs{
+	position: relative;
+}
+.bigPlay img{
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+}
+.bigPlay a{
+	position: absolute;
+
 }
 
 video { 
@@ -67,6 +99,13 @@ video {
 
 #pause {
 	cursor: pointer;
+	width: 140px;
+	line-height: 30px;
+}
+
+#pause img {
+	width: 25px;
+	margin: 0px 10px;
 }
 
 .myBtn { 
@@ -103,4 +142,12 @@ video {
   }
 .modal{
   color: #404040FF;
+}
+
+.card {
+	text-align: left;
+}
+
+.card p{
+	color: black;
 }
